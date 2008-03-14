@@ -6,3 +6,5 @@ line number is)
 
 * Document the internals in the POD.
 
+* Make sure it works for goto's inside main().
+

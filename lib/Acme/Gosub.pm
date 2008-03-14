@@ -5,7 +5,7 @@ use warnings;
 use vars qw($VERSION);
 use Carp;
 
-$VERSION = '0.1.2';
+$VERSION = '0.1.3';
 
 # LOAD FILTERING MODULE...
 use Filter::Util::Call;
@@ -178,12 +178,30 @@ Acme::Gosub - Implement BASIC-like "gosub" and "greturn" in Perl
 =head1 DESCRIPTION
 
 Using this function enables using the "gosub" and "greturn" statements inside
-your program. "gosub" is identical to "goto" except that it records the 
+your program. "gosub" is identical to "goto" except that it records the
 place from which it was invoked. Then, when a "greturn" is used, it jumps back
 to the place of the last goto that was not "greturned" yet. If you're not
 a BASIC programmer you can think of it as a poor man's recursion.
 
 For more information consult the examples in the test files.
+
+=head1 FUNCTIONS
+
+=head2 filter()
+
+Does the actual filtering to the code.
+
+=head2 filter_blocks()
+
+The workhorse of the module - does most of the work of transforming the code.
+
+=head2 line()
+
+Taken from Switch.pm.
+
+=head2 unimport()
+
+Cancels the filter.
 
 =head1 AUTHOR
 
