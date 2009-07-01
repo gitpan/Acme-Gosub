@@ -1,14 +1,13 @@
 ---
 name: Acme-Gosub
-version: 0.1.3
+version: 0.1.4
 author:
-  - |-
-    Shlomi Fish ( C<< <shlomif@iglu.org.il> >> ) converted Switch.pm to become 
-    Acme::Gosub.
+  - 'Shlomi Fish <shlomif@cpan.org>'
 abstract: Implement BASIC-like "gosub" and "greturn" in Perl
 license: perl
 resources:
   license: http://dev.perl.org/licenses/
+  repository: https://svn.berlios.de/svnroot/repos/web-cpan/Acme-Gosub/
 requires:
   Filter::Util::Call: 0
   Text::Balanced: 0
@@ -17,8 +16,17 @@ build_requires:
 provides:
   Acme::Gosub:
     file: lib/Acme/Gosub.pm
-    version: 0.1.3
-generated_by: Module::Build version 0.2808
+    version: 0.1.4
+generated_by: Module::Build version 0.33
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+keywords:
+  - Acme
+  - BASIC
+  - black magick
+  - gosub
+  - joke
+  - retro
+  - source filter
+  - subroutine
