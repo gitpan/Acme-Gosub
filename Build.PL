@@ -6,22 +6,27 @@ use Module::Build;
 my $build = Module::Build->new(
     'module_name' => "Acme::Gosub",
     dist_author => 'Shlomi Fish <shlomif@cpan.org>',
-    'requires' => 
+    'requires' =>
     {
+        'Carp' => 0,
         'Filter::Util::Call' => 0,
         'Text::Balanced' => 0,
+        'perl' => '5.008',
+        'strict' => 0,
+        'vars' => 0,
+        'warnings' => 0,
     },
     build_requires =>
     {
-        "Test::More" => 0,
+        'Module::Build' => '0.37',
+        'Test::More' => 0,
     },
     'license' => "perl",
-    create_makefile_pl => "traditional",
     meta_merge =>
     {
         resources =>
         {
-            repository => "https://svn.berlios.de/svnroot/repos/web-cpan/Acme-Gosub/",
+            repository => "https://bitbucket.org/shlomif/perl-acme-gosub",
         },
         keywords =>
         [

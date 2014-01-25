@@ -1,13 +1,15 @@
 Build.PL
 Changes
-examples/japh.pl
-lib/Acme/Gosub.pm
-Makefile.PL
 MANIFEST
+META.json
 META.yml # Will be created by "make dist"
 README
+TODO
+examples/japh.pl
+lib/Acme/Gosub.pm
 t/00-load.t
 t/01-basic.t
-TODO
-t/pod.t
+t/cpan-changes.t
 t/pod-coverage.t
+t/pod.t
+t/style-trailing-space.t

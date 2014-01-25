@@ -1,32 +1,41 @@
 ---
-name: Acme-Gosub
-version: 0.1.4
+abstract: "Implement BASIC-like \"gosub\" and \"greturn\" in Perl"
 author:
   - 'Shlomi Fish <shlomif@cpan.org>'
-abstract: Implement BASIC-like "gosub" and "greturn" in Perl
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-  repository: https://svn.berlios.de/svnroot/repos/web-cpan/Acme-Gosub/
-requires:
-  Filter::Util::Call: 0
-  Text::Balanced: 0
 build_requires:
+  Module::Build: 0.37
   Test::More: 0
-provides:
-  Acme::Gosub:
-    file: lib/Acme/Gosub.pm
-    version: 0.1.4
-generated_by: Module::Build version 0.33
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+configure_requires:
+  Module::Build: 0.40
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
 keywords:
   - Acme
   - BASIC
-  - black magick
+  - 'black magick'
   - gosub
   - joke
   - retro
-  - source filter
+  - 'source filter'
   - subroutine
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Acme-Gosub
+provides:
+  Acme::Gosub:
+    file: lib/Acme/Gosub.pm
+    version: v0.1.5
+requires:
+  Carp: 0
+  Filter::Util::Call: 0
+  Text::Balanced: 0
+  perl: 5.008
+  strict: 0
+  vars: 0
+  warnings: 0
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: https://bitbucket.org/shlomif/perl-acme-gosub
+version: v0.1.5
